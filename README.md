@@ -1,14 +1,39 @@
 # Artist Catalogue created with React
 
-Link: https://wasimapinjari.github.io/react-artist-catalogue/
+🔗 Link: https://wasimapinjari.github.io/react-artist-catalogue
 
-# Screenshot
+# 📸 Screenshot
 
 ![Preview screenshot](public/screenshot.png)
 
+# ✨ Getting Started:
+
+To get started with this project, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/react-component-showcase.git`
+2. Install the dependencies: `npm install`
+3. Run the development server: `npm start`
+4. Open your browser and navigate to `http://localhost:3000` to see the React component showcase in action.
+
+Feel free to explore the codebase, experiment with different components, and modify them to suit your needs. Contributions and suggestions are welcome!
+
+# 🎉 Inspiration
+
 I created this project after learning the following:
 
-- What is React, JSX and Babel
-- How to pass data in components from parent to child component using props
+- What is React, JSX and component tree
+- How and why we need to import React, ReactDom and other files in React project
+- How to pass data in components from parent to child components using props
 - How to render list using array map method
-- How destructuring of array and object works in JavaScript
+- How destructuring of object works in JavaScript
+
+I felt like testing my knowledge by challenging myself to apply it to some project of my own instead of copy-pasting code written by someone else.
+
+# 🌟 Showcase 
+
+This GitHub repository serves as a comprehensive demonstration of fundamental concepts in React development, including React, JSX, component trees, data passing using props, rendering lists, and JavaScript object destructuring.
+
+# 🔗 **Related Resources**
+- React Official Documentation: [https://reactjs.org/](https://react.dev)
+- MDN Web Docs - Array map(): [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- MDN Web Docs - Destructuring assignment: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
