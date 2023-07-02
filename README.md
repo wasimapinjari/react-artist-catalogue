@@ -1,6 +1,6 @@
 # Artist Catalogue created with React
 
-🔗 Link: https://wasimapinjari.github.io/react-artist-catalogue
+🔗 Link: [https://wasimapinjari.github.io/react-artist-catalogue](https://wasimapinjari.github.io/react-artist-catalogue)
 
 # 📸 Screenshot
 
