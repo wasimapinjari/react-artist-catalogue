@@ -1,13 +1,173 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Style+Script&display=swap');
+
+::-moz-selection {
+  color: #008080;
+  background: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::selection {
+  color: #008080;
+  background: #333;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #F8F8FF;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: #008080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  color: #444;
+  font-weight: 400;
+  background-color: #F8F8FF;
+  min-height: 100vh;
+  padding: 3.2rem;
+  padding-bottom: 6rem;
+}
+
+h1 {
+  margin-top: 4.8rem;
+  color: #008080;
+  font-family: 'Style Script', sans-serif;
+  text-align: center;
+  font-size: 6.2rem;
+  position: relative;
+  width: 100%;
+  display: block;
+  font-weight: unset;
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 1.6;
+  width: 80%;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #008080;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: auto;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.header {
+  align-self: stretch;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.artist-catalogue {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+  margin-bottom: 6.4rem;
+  list-style: none;
+}
+
+.artist-container {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.image-container {
+  margin-top: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80% );
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80% );
+  align-self: center;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  background-color: #008080;
+  position: relative;
+  text-align: center;
+}
+
+.image-container img {
+  background-color: #F8F8FF;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 118px;
+  height: 118px;
+  clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 80%, 50% 100%, 0 80% );
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80% );
+  display: inline-block;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.artist-container div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+@media (max-width: 50rem) {
+  .artist-catalogue {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 25rem) {
+  h1 {
+    font-size: 5.6rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  .artist-container {
+    flex-direction: column;
+  }
+  .artist-container div {
+    justify-content: center;
+    align-items: center;
+  }
 }
