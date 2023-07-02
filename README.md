@@ -1,6 +1,10 @@
 # Artist Catalogue created with React
 
-Link: https://wasimapinjari.github.com/react-artist-catalogue
+Link: https://wasimapinjari.github.io/react-artist-catalogue/
+
+# Screenshot
+
+![Main Interface](public/screenshot.png)
 
 I created this project after learning the following:
 
