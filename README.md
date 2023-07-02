@@ -7,4 +7,4 @@ I created this project after learning the following:
 - What is React, JSX and Babel
 - How to pass data in components from parent to child component using props
 - How to render list using array map function
-- How to do destructuring of array and object in javaScript
+- How destructuring of array and object works in JavaScript
