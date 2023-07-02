@@ -4,7 +4,7 @@ Link: https://wasimapinjari.github.io/react-artist-catalogue/
 
 # Screenshot
 
-![Main Interface](public/screenshot.png)
+![Preview screenshot](public/screenshot.png)
 
 I created this project after learning the following:
 
