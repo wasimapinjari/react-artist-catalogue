@@ -4,7 +4,7 @@
 
 # 📸 Screenshot
 
-![Preview screenshot](public/screenshot.png)
+![Preview screenshot](public/screenshots/default.png)
 
 # ✨ Getting Started:
 
