@@ -75,6 +75,24 @@ h3 {
   color: #008080;
 }
 
+img {
+  background-color: #F8F8FF;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 118px;
+  height: 118px;
+  clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 80%, 50% 100%, 0 80% );
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80% );
+  display: inline-block;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 p {
   font-size: 1.6rem;
   margin-bottom: auto;
@@ -124,24 +142,6 @@ p {
   background-color: #008080;
   position: relative;
   text-align: center;
-}
-
-.image-container img {
-  background-color: #F8F8FF;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 118px;
-  height: 118px;
-  clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 80%, 50% 100%, 0 80% );
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80% );
-  display: inline-block;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .artist-container div {

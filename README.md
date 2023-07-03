@@ -6,6 +6,10 @@
 
 ![Preview screenshot](public/screenshots/default.png)
 
+# Learn how I build this project in LEARN.md
+
+🔗 Link: [LEARN.md](LEARN.md)
+
 # ✨ Getting Started:
 
 To get started with this project, follow these steps:
@@ -13,9 +17,10 @@ To get started with this project, follow these steps:
 1. Clone the repository: `git clone https://github.com/your-username/react-component-showcase.git`
 2. Install the dependencies: `npm install`
 3. Run the development server: `npm start`
-4. Open your browser and navigate to `http://localhost:3000` to see the React component showcase in action.
+4. Open your browser and navigate to `http://localhost:3000` to see the project in action.
+5. **Debug:** If you are already running a React app in port **3000** the webpack (tool use by react to create local React development environment) will assign you a different port number usually by adding one to the current port number in use. In this case the new port number will be 3000 + 1 = 3001. So navigate to `http://localhost:3001` to see the project.
 
-Feel free to explore the codebase, experiment with different components, and modify them to suit your needs. Contributions and suggestions are welcome!
+Feel free to explore the codebase, experiment with different components, and modify them to suit your needs. Feedback and suggestions are welcome!
 
 # 🎉 Inspiration
 

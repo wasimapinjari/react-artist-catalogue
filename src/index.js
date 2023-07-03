@@ -84,7 +84,7 @@ function App() {
     </div>
   );
 }
-
+ console.log(__dirname);
 function Header() {
   return (
     <header className="header">
@@ -112,13 +112,13 @@ function Main() {
 function Artist({ artistData }) {
   return (
     <div className="artist-container">
-      <div className="image-container">
+      <figure className="image-container">
         <img
           src={artistData.photoSrc}
           alt={artistData.artistName}
           draggable="false"
         />
-      </div>
+      </figure>
       <div>
         <h3>{artistData.artistName}</h3>
         <p>{artistData.dateOfBirth}</p>
