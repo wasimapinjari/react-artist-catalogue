@@ -359,12 +359,12 @@ img {
   clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   display: inline-block;
+  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  user-drag: none;
 }
 
 .artist-container {
