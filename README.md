@@ -21,13 +21,13 @@ Feel free to explore the codebase, experiment with different components, and mod
 
 I created this project after learning the following:
 
-- What is React, JSX and component tree
-- How and why we need to import React, ReactDOM and other files in React project
-- How to pass data in components from parent to child components using props
-- How to render list using array map method
-- How destructuring of object works in JavaScript
+ - What are React, JSX & component tree
+ - How and why do we need to import React, ReactDOM & other files in React project
+ - How to pass data in components from parent to child components using props
+ - How to render list using the array map method
+ - How destructuring of object works in JavaScript
 
-I felt like testing my knowledge by challenging myself to apply it to some project of my own instead of copy-pasting code written by someone else.
+I felt like testing my knowledge by challenging myself to apply it to some project of my own.
 
 # 🌟 Showcase 
 
