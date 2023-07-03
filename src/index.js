@@ -16,7 +16,7 @@ const celebrityArtists = [
     nationality: "American",
     genre: "R&B, Pop",
     yearsActive: "1997-present",
-    photoSrc: "Beyoncé.jpg",
+    photoSrc: "react-artist-catalogue/Artists/Beyoncé.jpg",
   },
   {
     artistName: "Ed Sheeran",
@@ -24,7 +24,7 @@ const celebrityArtists = [
     nationality: "British",
     genre: "Pop, Folk, R&B",
     yearsActive: "2004-present",
-    photoSrc: "Ed Sheeran.png",
+    photoSrc: "react-artist-catalogue/Artists/Ed Sheeran.png",
   },
   {
     artistName: "Taylor Swift",
@@ -32,7 +32,7 @@ const celebrityArtists = [
     nationality: "American",
     genre: "Pop, Country, Folk",
     yearsActive: "2004-present",
-    photoSrc: "Taylor Swift.png",
+    photoSrc: "react-artist-catalogue/Artists/Taylor Swift.png",
   },
   {
     artistName: "Drake",
@@ -40,7 +40,7 @@ const celebrityArtists = [
     nationality: "Canadian",
     genre: "Hip-Hop, R&B",
     yearsActive: "2001-present",
-    photoSrc: "Drake.png",
+    photoSrc: "react-artist-catalogue/Artists/Drake.png",
   },
   {
     artistName: "Justin Bieber",
@@ -48,7 +48,7 @@ const celebrityArtists = [
     nationality: "Canadian",
     genre: "Pop, R&B",
     yearsActive: "2008-present",
-    photoSrc: "Justin Bieber.png",
+    photoSrc: "react-artist-catalogue/Artists/Justin Bieber.png",
   },
   {
     artistName: "Ariana Grande",
@@ -56,7 +56,7 @@ const celebrityArtists = [
     nationality: "American",
     genre: "Pop, R&B",
     yearsActive: "2008-present",
-    photoSrc: "Ariana Grande.png",
+    photoSrc: "react-artist-catalogue/Artists/Ariana Grande.png",
   },
   {
     artistName: "Adele",
@@ -64,7 +64,7 @@ const celebrityArtists = [
     nationality: "British",
     genre: "Pop, Soul",
     yearsActive: "2006-present",
-    photoSrc: "Adele.png",
+    photoSrc: "react-artist-catalogue/Artists/Adele.png",
   },
   {
     artistName: "Rihanna",
@@ -72,7 +72,7 @@ const celebrityArtists = [
     nationality: "Barbadian",
     genre: "R&B, Pop, Dancehall",
     yearsActive: "2003-present",
-    photoSrc: "Rihanna.png",
+    photoSrc: "react-artist-catalogue/Artists/Rihanna.png",
   },
 ];
 
