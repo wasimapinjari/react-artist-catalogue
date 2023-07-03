@@ -1,16 +1,16 @@
 # Artist Catalogue created with React
 
-🔗 Link: [https://wasimapinjari.github.io/react-artist-catalogue](https://wasimapinjari.github.io/react-artist-catalogue)
+🔗 Live Demo: [https://wasimapinjari.github.io/react-artist-catalogue](https://wasimapinjari.github.io/react-artist-catalogue)
 
-# 📸 Screenshot
+## 📸 Screenshot
 
 ![Preview screenshot](public/screenshots/default.png)
 
-# Learn how I build this project in LEARN.md
+## Learn how I build this project in `LEARN.md`
 
-🔗 Link: [LEARN.md](LEARN.md)
+🔗 Learn here: [LEARN.md](LEARN.md)
 
-# ✨ Getting Started:
+## ✨ Getting Started:
 
 To get started with this project, follow these steps:
 
@@ -22,7 +22,7 @@ To get started with this project, follow these steps:
 
 Feel free to explore the codebase, experiment with different components, and modify them to suit your needs. Feedback and suggestions are welcome!
 
-# 🎉 Inspiration
+## 🎉 Inspiration
 
 I created this project after learning the following:
 
@@ -34,11 +34,11 @@ I created this project after learning the following:
 
 I felt like testing my knowledge by challenging myself to apply it to some project of my own.
 
-# 🌟 Showcase 
+## 🌟 Showcase 
 
 This GitHub repository serves as a comprehensive demonstration of fundamental concepts in React development, including React, JSX, component trees, data passing using props, rendering lists, and JavaScript object destructuring.
 
-# 🔗 **Related Resources**
+## 🔗 **Related Resources**
 - React Official Documentation: [https://reactjs.org/](https://react.dev)
 - MDN Web Docs - Array map(): [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - MDN Web Docs - Destructuring assignment: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
