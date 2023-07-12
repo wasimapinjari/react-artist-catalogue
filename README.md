@@ -4,7 +4,7 @@
 
 ## 📸 Screenshot
 
-![Preview screenshot](public/screenshots/default.png)
+![Preview screenshot](public/images/main.png)
 
 ## `13,000+ words` article on how I build this project
 🔗 Article Link: [LEARN.md](LEARN.md)
