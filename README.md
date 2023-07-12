@@ -6,8 +6,8 @@
 
 ![Preview screenshot](public/screenshots/default.png)
 
-## `10,000+ words` article on how I build this project
-🔗 Learn here: [LEARN.md](LEARN.md)
+## `13,000+ words` article on how I build this project
+🔗 Article Link: [LEARN.md](LEARN.md)
 
 ## ✨ Getting Started:
 

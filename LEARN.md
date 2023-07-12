@@ -1,6 +1,5 @@
-# DOUBLE CHECK MAC KEYBOARD SHORTCUT KEYS
-
 # Extreme developer guide for designing premium websites using React ♡
+
 🔗 Live Demo: [https://wasimapinjari.github.io/react-artist-catalogue](https://wasimapinjari.github.io/react-artist-catalogue)
 
 🔗 Source: [https://github.com/wasimapinjari/react-artist-catalogue](https://github.com/wasimapinjari/react-artist-catalogue)
