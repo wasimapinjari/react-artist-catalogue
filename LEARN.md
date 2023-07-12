@@ -8,7 +8,7 @@
 
 ![Main preview](public/images/main.png)
 
-Below is the process I went through to build and deploy this React project to GitHub pages and I hope you get value out of it. It's a long article (12,000+ words) because I wanted to give everything I have so feel free to skip whatever you find unnecessary. Enjoy!
+Below is the process I went through to build and deploy this React project to GitHub pages and I hope you get value out of it. It's a long article (13,000+ words) because I wanted to give everything I have so feel free to skip whatever you find unnecessary. Enjoy!
 
 ## Coming up with an idea
 
