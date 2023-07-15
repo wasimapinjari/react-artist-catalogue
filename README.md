@@ -6,14 +6,14 @@
 
 ![Preview screenshot](public/images/main.png)
 
-## `13,000+ words` article on how I build this project
+## `16,000+ words` article on how I build this project
 🔗 Article Link: [LEARN.md](LEARN.md)
 
 ## ✨ Getting Started:
 
 To get started with this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/react-artist-catalogue.git`
+1. Clone the repository: `git clone https://github.com/wasimapinjari/react-artist-catalogue.git`
 2. Install the dependencies: `npm install`
 3. Run the development server: `npm start`
 4. You probably don't need to do this step because npm start will automatically open this project in the default browser but if it don't for some reason then open your browser and navigate to `http://localhost:3000` to see the project in action.

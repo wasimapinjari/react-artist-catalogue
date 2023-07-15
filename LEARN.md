@@ -898,6 +898,85 @@ body {
 }
 ```
 
+## Rearranging data
+
+I feel like I need to rearrange the data to make the images look more put together. So I rearranged the data to change the order in which React render them. 
+
+Previous data order = [Beyoncé, Justin Bieber, Drake, Taylor Swift, Ariana Grande, Rihanna, Ed Sheeran, Adele]. 
+
+New data order = [Taylor Swift, Justin Bieber, Drake, Beyoncé, Ariana Grande, Rihanna, Ed Sheeran, Adele].
+
+```js
+// data/celebrityArtists.js
+
+const celebrityArtists = [
+  {
+    artistName: "Taylor Swift",
+    dateOfBirth: "December 13, 1989",
+    nationality: "American",
+    genre: "Pop, Country, Folk",
+    yearsActive: "2004-present",
+    photoSrc: "artists/Taylor Swift.png",
+  },
+  {
+    artistName: "Justin Bieber",
+    dateOfBirth: "March 1, 1994",
+    nationality: "Canadian",
+    genre: "Pop, R&B",
+    yearsActive: "2008-present",
+    photoSrc: "artists/Justin Bieber.png",
+  },
+  {
+    artistName: "Drake",
+    dateOfBirth: "October 24, 1986",
+    nationality: "Canadian",
+    genre: "Hip-Hop, R&B",
+    yearsActive: "2001-present",
+    photoSrc: "artists/Drake.png",
+  },
+  {
+    artistName: "Beyoncé",
+    dateOfBirth: "September 4, 1981",
+    nationality: "American",
+    genre: "R&B, Pop",
+    yearsActive: "1997-present",
+    photoSrc: "artists/Beyoncé.jpg",
+  },
+  {
+    artistName: "Ariana Grande",
+    dateOfBirth: "June 26, 1993",
+    nationality: "American",
+    genre: "Pop, R&B",
+    yearsActive: "2008-present",
+    photoSrc: "artists/Ariana Grande.png",
+  },
+  {
+    artistName: "Rihanna",
+    dateOfBirth: "February 20, 1988",
+    nationality: "Barbadian",
+    genre: "R&B, Pop, Dancehall",
+    yearsActive: "2003-present",
+    photoSrc: "artists/Rihanna.png",
+  },
+  {
+    artistName: "Ed Sheeran",
+    dateOfBirth: "February 17, 1991",
+    nationality: "British",
+    genre: "Pop, Folk, R&B",
+    yearsActive: "2004-present",
+    photoSrc: "artists/Ed Sheeran.png",
+  },
+  {
+    artistName: "Adele",
+    dateOfBirth: "May 5, 1988",
+    nationality: "British",
+    genre: "Pop, Soul",
+    yearsActive: "2006-present",
+    photoSrc: "artists/Adele.png",
+  },
+];
+```
+
 ## Making the website responsive
 
 Lastly, I realize that my website is not responsive. So I made it responsive using media queries. I like to select media query points based on where my design breaks. 
@@ -1425,4 +1504,6 @@ So the best way I find myself to get on track is to decide that you will not do 
 
 What this look like is deciding that you will either work or do nothing. You are allowed to get bored, sleep, go into the nature and be with your loved ones. You are not allowed to play games, listen to music, visit social media, eat some junk food, etc. everything that induce dopamine to abnormal levels.
 
-What tends to happen is that once you start doing that you will be so bored that you will think it's just better to do the work (how do you think I am able to write this article?) So start getting bored you will naturally want to work because it's better than doing nothing and let your brain do it's magic and make you feel good as you work and achieve your dream life. Bye ♡
+What tends to happen is that once you start doing that you will be so bored that you will think it's just better to do the work (how do you think I am able to write this article?) So start getting bored you will naturally want to work because it's better than doing nothing and let your brain do it's magic and make you feel good as you work and achieve your dream life. 
+
+Bye ♡
