@@ -8,15 +8,21 @@
 
 ![Main preview](public/images/main.png)
 
-Below is the process I went through to build and deploy this React project to GitHub pages and I hope you get value out of it. It's a long article (12,000+ words) because I wanted to give everything I have so feel free to skip whatever you find unnecessary. Enjoy!
+This guide is extreme. We're going to build a beautiful React project and deploy it on GitHub Pages from start to finish. 
+
+It's a long article (16,000+ words) because I wanted to detail the whole process and not left anything important out.
+
+The curse of knowledge is we often assume other people know what we know. It look so obvious for anyone to know about it. My goal is to not fall for it.
+
+I also added bonus content in the end which are answers to questions that I often get asked by fellow developers. Enjoy!
 
 ## Coming up with an idea
 
-First I come up with an idea of what I wanted to create. I knew I wanted to render a list in React. But what do I render? I don't have any data. I was scratching my head in confusion trying to come up with something.
+First I come up with an idea of what I wanted to create. After some thinking I decided to render a list of data in React. It's simple enough that we will not get demotivated with complexity and lose interest. But I don't have any data.
 
 ## Asking ChatGPT for Data
 
-I was frustrated so I proceed to ask ChatGPT for dummy data. It gave me a dummy data set but I wasn't satisfied. It was too random for anyone to care including myself. I took a deep sigh after staring at my laptop for some time.
+I proceed to ask ChatGPT for dummy data. It gave me a dummy data set but I wasn't satisfied. It was too random for anyone to care including myself. I took a deep sigh after staring at my laptop for some time.
 
 I had an idea to ask ChatGPT to give me celebrity artists' data. It gave me 3 different celebrity profiles, I complained and asked to give me at least 10. The data looked quite promising because I didn't know that information about those celebrities myself and I was curious to know that. So I went with this data set.
 
@@ -1204,12 +1210,60 @@ Here is how you can find the link of deployed page:
 
 5. Here you will find the link of the deployed page. You might have to wait a little bit more if it is not there. After some time you might refresh the page and see the message like so:
 
-Your site is live at https://wasimapinjari.github.io/react-artist-catalogue
+    Your site is live at https://wasimapinjari.github.io/react-artist-catalogue
 
-If you see message something like this then congrats for making it to the end. Your website is live and is deployed on GitHub pages and by clicking on the link you will be able to see it.
+    If you see message something like this then congrats. Your website is live and is deployed on GitHub pages and by clicking on the link you will be able to see it.
 
 ![GitHub repository settings](public/images/github-repository-settings.png)
 
+8. **[Debug]:** Now if you try to open the project locally especially after restarting the project by closing the development environment by pressing Ctrl + C (Windows) or Command + . (Mac) keybord keys while cursor is active inside the terminal (and if not just click inside the terminal) or alternatively, open new terminal by clicking + (plus) icon and close the old terminal by clicking on trashcan icon. Once you do that rerun the "npm start" command to start local development environment again and then you will find that the images no longer works. 
+
+![VS code closing terminal](public/images/vscode-close-terminal.png)
+
+9. This happens because we added the homepage path key/value pair in the package.json file.
+
+![Changed project path](public/images/changed-project-path.png)
+
+10. I tried various ways to fixed it by searching on Google and finding how other people deal with this issue and no suggested solutions worked for me. 
+    I end up finding my own way to fix it with a slight compromise which looks like this:
+
+    - To make those images work what you can do is either remove the key/value pair of homepage from the package.json altogether or just change the value of homepage key from "react-artist-catalogue" to this "/". Now the "/" stands for the root directory of the project. Root directory basically mean from the point the project start and all the associated files and folder are contain inside it.
+    - I am going to push this change on GitHub because I don't want people to download the project and have images not working. So the compromise bit it that if I have to make changes and deploy my project on GitHub pages then I can't just run this command: `"npm deploy"` and expect everything to work flawlessly.
+    - To be able to deploy my project to GitHub pages again with my changes I must change the package json homepage key's value from "/" to "https://wasimapinjari.github.io/react-artist-catalogue" again and save it. Now I have to run some commands to deploy our project with no problems like so:
+
+      ```bash
+      git add .
+      git commit -m "add changes + rename json"
+      git push origin main
+      npm deploy
+      ```
+
+    - After the deployment I will have to change the package json again and change the value of homepage key back to "/" from "https://wasimapinjari.github.io/react-artist-catalogue" and save it.
+    - I will commit all the changes and push it to my GitHub repository.
+
+      ```bash
+      git add .
+      git commit -m "rename json"
+      git push origin main
+      ```
+
+    - To make changing homepage name back and forth easier I will add comment in package json using "//" as a key and writing comment inside it containing homepage key/value pair for future use. 
+    
+
+      ![VS code json package comment](public/images/vscode-json-package-comment.png)
+
+    - Make sure you only use "//" key once per json file and you don't nest it as a value of some other key like for example there is a key then it's value is a object and in that there is a comment as a key, don't do that.
+
+      ```json
+      {
+        "example": {
+          "name": "Wasim A Pinjari",
+          "//": "This is a wrong way of commenting"
+        }
+      }
+      ```
+
+    - To see the images working again close the terminal and rerun the npm start command to start local development environment again.
 
 ## Revealing the size of our website
 
@@ -1269,7 +1323,7 @@ So considering the fact you're not a God and just as vulnerable as others to lif
 
 If someone is truly toxic then find a way to get rid of them and cut them out of your life by slowing reducing the contact with them to the point that they are out of you life completely. Most of times you don't even need to say someone on their face that they are no longer welcome in your life and if you do have to then remember that you can be extremely assertive and say the most offensive thing to someone as long as you're nice about it. Try to end things at a high note so that last thing they remember about you is that they felt good in your presence. People can forget everything but how you made them feel.
 
-Sometimes someone is not nice to you and you may want to return the favour but most of times what happens is that you start getting down the path where you start adopting the toxic behaviour yourself to punish the toxic person so it's better to flee the presence of someone like that than to try to punish them. If you do want to punish them then realize the best pushinshment for them is to not get any attention whatsoever and get ignored as their toxic behaviour often stems from their hunger for attention and how acting toxic gives them that instant attention as compare to when they are on their good behaviour and it's also a lot less work than to try to care about other people's need and placate them.
+Sometimes someone is not nice to you and you may want to return the favour but most of times what happens is that you start getting down the path where you start adopting the toxic behaviour yourself to punish the toxic person so it's better to flee the presence of someone like that than to try to punish them. If you do want to punish them then realize the best pushinshment for them is to not get any attention whatsoever and get ignored as their toxic behaviour often stems from their hunger for attention and how acting toxic gives them that instant attention as compare to when they are on their good behaviour and it's also a lot less work than to try to care about other people's need and placate them as this required to be selfless and thinking outside of yourself.
 
 Hopefully as you start getting more financially free you will be able to decide how, when, where and with whom you spend your time with and be able to relocate somewhere where you are surrounded by nice people if you're in toxic environment.
 
@@ -1315,3 +1369,55 @@ I had a friend who keeps complaining how he doesn't remember anything and wish h
 This is what make stories powerful when teaching someone. Stories are filled with all kind of details what something look, sound, smell, touch and taste like and since we all possess empathy we can put ourselves in the shoes of others and actually feel and imagine the experience of the person in the story. Our emotional reaction to this stories make us remember it for the longest time.
 
 Brain studies shows us that imagining something is similar to actually doing the thing in the real life. Imagination light up the same areas of our brain that real actual experience does. That mean if you have a tendency to live in a fantasy world then that probably going to make you demotivated to purse the actual stuff because you already receive the rewards of doing the actual thing just by imagining and fantasizing about it. You receive the reward that cause the motivation to seek it in the first place without the risks associated with going after something that you might not get. Doing too much of anything is a bad thing. Imagining good things may make you purse them but don't do it too much as it will cause you to lose interest in them slowly and make you chase something new and the cycle will repeat itself.
+
+## Motivation
+
+People who struggle with motivation are often people who are addicted to something that is sucking them dry out of motivation.
+
+To understand motivation you first need to understand about a brain chemical called dopamine which is associated with making you feel good whenever you do some activity that is good for your survival and replication as a species. It's how you feel pleasure.
+
+The release of the chemical act as a reward because once it's released in your brain you feel good or sometimes so good that you end up getting addicted. This good feelings causes you to be motivated to seek that reward again and again.
+
+So how do you determine what you should and shouldn't do not in life? By following your feelings, you go towards pleasure (good feelings) and run away from pain (bad feelings).
+
+The problem with running on feelings is that you can be tricked just like birds can be tricked into taking care of eggs which wasn't hers by placing other eggs which are made of plastic which looks better and more whiter than her original dull ones so her feelings tell her to leave the old eggs and take care of this new shinner ones instead. 
+
+Well you may think you can't be tricked like that because you aren't dumb like those birds. Well humans are susceptible to same trickery. How we get tricked is through simulation. Simulation is basically creating a lookalike situation as if it exists in real life and what make the simulation more insidious is when you add supernormal stimulus to it. Supernormal is something which is not normal, something that is so exaggerated that the real version looks pale in comparison like those plastic eggs. Since the original is not as exciting as the supernormal version that we're programmed to desire by default, we end up losing interest in the normal things.
+
+What this looks like is you losing interest is vegetables and fruits and finding junk food or fruit juice packets more interesting. Or you losing interest in normal people that you encounter on daily basis compared to those exist in your smartphones with exaggerated body features that you don't often encounter in real life. Or you finding living life in a computer game more engaging than your actual life.
+
+How feeling get wronged:
+
+1. When you are in the process of achieving something in life your brain release dopamine and you keep feeling good (pleasure) as you're working towards the goal as well as once you accomplish the goal itself. The good feelings will keep you motivated along the journey and after journey as you will be motivated to achieve something else in life to feel good again. This is normal life.
+
+2. Let's say your friend introduced you to a game which is open world and it allows you to do anything you want in game. Now this game is a what we will called supernormal stimulus which depict the real life to it's extreme: the story of game is fast moving where crazy things are happening with the character and you can shoot anyone you want and steal anyone's cars which is not normal and you're feeling this roller coaster of emotions of high and low quickly as you die or kill someone and the sense of achievement as you level up give you dopamine.
+
+3. Your brain doesn't care as long as you it thinks you're doing what you're supposed to do in this case achieving something, your brain will reward you and since the game is fast moving and the feedback loop is fast the brain start releasing too much dopamine too quickly making you feel more good than normal as you kill someone or beat your friend in a match or something or as you level up. This fast pace achievement does not exist in real life. Same with social media if you have to see something new you need to travel but look what happens with social media new environment is just a scroll away. New people with exaggrated bodies just a scroll away. New thing that will make you angry or happy just a scroll away. This is not normal, normally you feel the range of emotions but those range of emotions you experience is in a long time span and far between not instantly like on social media. Social media have no inherent balance like real life does.
+
+4. Since this new activity make you feel good too much and too often you start losing interest in the actual life which is slow moving, not too much drama for high emotional roller coaster ride and achievements takes longer time as compared to the game. So the burst of dopamine is slower as compared to the game. The other important thing that you must know is that dopamine get release after you get suprised, shocked and anxiety-induced. So that's why the outrage and shocking element of social media is so addicting as compared to your slow boring life where most people you will find are normal trying to do their best to make it through life without getting hurt their nothing actually making you shocked, terrified and suprised to induce dopamine there is no variety it's just the same old story.
+
+5. This is the point where feeling start getting wronged. Humans are very adaptive and you get used to feeling too good and since normal thing don't feel as good when compared to your feeling for abnormal things there is a shift that happens where normal things start feeling pointless and you feel as if you should play games, watch social media, eat junk food, listen to music, etc. more than doing something in real life and making achievement happen through real efforts.
+
+Those where the case with birds when they see the supernormal version of eggs. It's just like us watching attractive people on our phone screen and tricking our brain as if they were actually ther in real life. In reality there is nothing you're just staring at a two dimensional screen with pixel dot moving around not a actual person. You're tricking your brain into thinking it's the actual person and your brain gives you the reward that you gain through deception. Do you deserve that reward?
+
+Your brain rewards you for being on path to ensuring your survival and replication and it created natural rewards for you to purse those things like mating, hunting, gathering resources, feeding and protecting yourself and your loved ones which is similar to achieving certain goal in life, eating vegetables and fruits, finding a partner, etc. But those natural rewards get highjacked with simulation and supernormal stimulus.
+
+What is the problem with feeling good all the time and living a high life?
+
+Your brain doesn't have a infinite reservoir of dopamine to pump into your brain to make you feel good all the time. Dopamine needs to be reproduced by your brain and it takes time. So real life which has inherent balance make it so you keep feeling good by releasing the chemical at a good pace and not depleting your reservious completely dry.
+
+What happens if you make your dopamine reserviour dry?
+
+Simple. You stop feeling good and this is a point of danger because since you're not feeling good by those activity that used to make you feel good. You will turn desparate and keep doing that activity and realize it's no longer fun anymore. This is where it gets ugly you will be so desperate for pleasure that you will turn to pain for it. You will become sadistic and masocistic. You will start deriving perverse pleasure from inflicting pain on yourself and others.
+
+There is a point where you release dopamine too much that there isn't enough of it and the only way to feel pleasure is to go extreme and more extreme. Pursuit of pleasure will turn into pursuit of pain. Inspiration turns to desperation. Love will turn to hate.
+
+If you take a rat and remove all dopamine from its brain. It will be still able to derive pleasure from doing pleasure inducing activity but it won't be able to feel motivation to seek those activities. Since there is no dopamine left.
+
+If you feel like doing nothing and demotivated to purse anything. You are like that that rat with depleted dopamine. You may still enjoy pleasurable activity (not to that extend it used to) but you won't be motivated to pursue any of those. You will want to sit there and do nothing.
+
+So the best way I find myself to get on track is to decide that you will not do those dopamine seeking behaviour that led you down the path of losing interest in the right things by highjacking your reward pathways and getting back to normal baseline where you feel good and derive pleasure just by doing normal things.
+
+What this look like is deciding that you will either work or do nothing. You are allowed to get bored, sleep, go into the nature and be with your loved ones. You are not allowed to play games, listen to music, visit social media, eat some junk food, etc. everything that induce dopamine to abnormal levels.
+
+What tends to happen is that once you start doing that you will be so bored that you will think it's just better to do the work (how do you think I am able to write this article?) So start getting bored you will naturally want to work and let your brain do it's magic and make you feel good as you work and achieve your dream life. Bye ♡
