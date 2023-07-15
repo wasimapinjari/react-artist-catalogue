@@ -1228,14 +1228,14 @@ Here is how you can find the link of deployed page:
     I end up finding my own way to fix it with a slight compromise which looks like this:
 
     - To make those images work what you can do is either remove the key/value pair of homepage from the package.json altogether or just change the value of homepage key from "react-artist-catalogue" to this "/". Now the "/" stands for the root directory of the project. Root directory basically mean from the point the project start and all the associated files and folder are contain inside it.
-    - I am going to push this change on GitHub because I don't want people to download the project and have images not working. So the compromise bit it that if I have to make changes and deploy my project on GitHub pages then I can't just run this command: `"npm deploy"` and expect everything to work flawlessly.
+    - I am going to push this change on GitHub because I don't want people to download the project and have images not working. So the compromise bit it that if I have to make changes and deploy my project on GitHub pages then I can't just run this command: `"npm run deploy"` and expect everything to work flawlessly.
     - To be able to deploy my project to GitHub pages again with my changes I must change the package json homepage key's value from "/" to "https://wasimapinjari.github.io/react-artist-catalogue" again and save it. Now I have to run some commands to deploy our project with no problems like so:
 
       ```bash
       git add .
       git commit -m "add changes + rename json"
       git push origin main
-      npm deploy
+      npm run deploy
       ```
 
     - After the deployment I will have to change the package json again and change the value of homepage key back to "/" from "https://wasimapinjari.github.io/react-artist-catalogue" and save it.
