@@ -1,11 +1,11 @@
 const celebrityArtists = [
   {
-    artistName: "Beyoncé",
-    dateOfBirth: "September 4, 1981",
+    artistName: "Taylor Swift",
+    dateOfBirth: "December 13, 1989",
     nationality: "American",
-    genre: "R&B, Pop",
-    yearsActive: "1997-present",
-    photoSrc: "artists/Beyoncé.jpg",
+    genre: "Pop, Country, Folk",
+    yearsActive: "2004-present",
+    photoSrc: "artists/Taylor Swift.png",
   },
   {
     artistName: "Justin Bieber",
@@ -24,12 +24,12 @@ const celebrityArtists = [
     photoSrc: "artists/Drake.png",
   },
   {
-    artistName: "Taylor Swift",
-    dateOfBirth: "December 13, 1989",
+    artistName: "Beyoncé",
+    dateOfBirth: "September 4, 1981",
     nationality: "American",
-    genre: "Pop, Country, Folk",
-    yearsActive: "2004-present",
-    photoSrc: "artists/Taylor Swift.png",
+    genre: "R&B, Pop",
+    yearsActive: "1997-present",
+    photoSrc: "artists/Beyoncé.jpg",
   },
   {
     artistName: "Ariana Grande",
