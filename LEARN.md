@@ -24,29 +24,27 @@ First I come up with an idea of what I wanted to create. After some thinking I d
 
 I proceed to ask ChatGPT for dummy data. It gave me a dummy data set but I wasn't satisfied. It was too random for anyone to care including myself. I took a deep sigh after staring at my laptop for some time.
 
-I had an idea to ask ChatGPT to give me celebrity artists' data. It gave me 3 different celebrity profiles, I complained and asked to give me at least 10. The data looked quite promising because I didn't know that information about those celebrities myself and I was curious to know that. So I went with this data set.
+I had an idea to ask ChatGPT to give me celebrity artists' data. It gave me 3 different celebrity profiles, I asked to give me at least 10. The data looked quite promising because I didn't know that information about those celebrities myself and I was curious to know that. So I went with this data set.
 
 ## Converting data into an array
 
-I started typing out that data in a JavaScript array containing information about each celebrity profile in an individual object then I realize out of nowhere as I was painstakingly typing out that data that the ChatGPT can do that work for me.
-
-So I ask ChatGPT to convert that data into a JavaScript array and voila! I have my data.
+I started painstakingly typing out the data in a JavaScript array containing information about each celebrity profile in an individual object then I realize out of nowhere that the ChatGPT can do the work for me. I ask ChatGPT to convert the data into a JavaScript array and voila! I have my data.
 
 ![ChatGPT](public/images/chatgpt.png)
 
 ## Searching Images
 
-The next step was to search celebrity images. My Google search query looked like this: Rihanna portrait white background. There are 10 celebrity images I need but I got tired of searching for the perfect image and I also thought too much of any good thing is bad so I decided to omit 2 celebrity and work with 8 data profiles instead of 10.
+The next step was to search celebrity images. My Google search query look like this: Rihanna portrait white background. There are 10 celebrity images I need but I got tired of searching for the perfect image and I also thought they are too many. So I decided to omit 2 celebrity and work with 8 data profiles instead of 10.
 
 ## Cropping Images
 
 ![Cropping Images](public/images/crop.png)
 
-I downloaded all the celebrity images that I like the best. The only thing I hate was I thought this project was easier and less time-consuming than it turned out. It felt as if I was hit with reality like a brick.
+I downloaded all the celebrity images I like the best. The only thing I hate was I thought this project was easier and less time-consuming than it turned out. It felt as if I was hit with brick of reality.
 
-The images I downloaded were of different dimensions (height and width) so I crop each one of them in a perfect square and made sure the celebrity face is in the center of the square.
+The images I downloaded were of different dimensions (height and width). I crop each one of them in a perfect square and made sure the celebrity face is in the center of the square.
 
-Cropping images fix half of the problem. By that I mean it fixed the problem of aspect ratio. The images that were of dimensions of desktop landscape wallpaper (1080 px x 1920 px) are now a perfect square (1080 px x 1080 px). Here px stands for pixels.
+Cropping images fix half of the problem. By that I mean it fixed the problem of aspect ratio. The images that were of dimensions of desktop landscape wallpaper (1080 px x 1920 px) are now a perfect square (1080 px x 1080 px). Here px stands for pixels which is a way of measuring images.
 
 What cropping doesn't fix is the dimensions themselves. So the image size (disk space an image takes to store itself) depends on the dimensions (height and width) of the image.
 
@@ -56,7 +54,7 @@ The bigger the dimension, the more space it takes, thus the bigger the size of a
 
 ![Resizing Images](public/images/resize.png)
 
-Currently, the images are of different sizes some of them were around 400 KB, and others 3 MB to 4 MB. The different sizes are due to me downloading images from different sources with that comes images with varying dimensions. I might download a celebrity full body image of dimension 1080 px x 1920 px (size: 2 MB) and crop only the face creating a 560 px x 560 px (size: 400 KB) image.
+Currently, the images are of different sizes some of them are around 400 KB, and others 3 MB to 4 MB. The different sizes are due to me downloading images from different sources with that comes images with varying dimensions. I might download a celebrity full body image of dimension 1080 px x 1920 px (size: 2 MB) and crop only the face creating a 560 px x 560 px (size: 400 KB) image.
 
 This is bad because we want our website to load fast and for that, we must reduce the size of images. Because whenever a person visits our website they essentially download our website and we don't want them to download a gigantic 10 MB website. Here is why:
 
@@ -1420,4 +1418,4 @@ So the best way I find myself to get on track is to decide that you will not do 
 
 What this look like is deciding that you will either work or do nothing. You are allowed to get bored, sleep, go into the nature and be with your loved ones. You are not allowed to play games, listen to music, visit social media, eat some junk food, etc. everything that induce dopamine to abnormal levels.
 
-What tends to happen is that once you start doing that you will be so bored that you will think it's just better to do the work (how do you think I am able to write this article?) So start getting bored you will naturally want to work and let your brain do it's magic and make you feel good as you work and achieve your dream life. Bye ♡
+What tends to happen is that once you start doing that you will be so bored that you will think it's just better to do the work (how do you think I am able to write this article?) So start getting bored you will naturally want to work because it's better than doing nothing and let your brain do it's magic and make you feel good as you work and achieve your dream life. Bye ♡
