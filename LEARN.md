@@ -1186,7 +1186,14 @@ After the local repository gets uploaded successfully. You can now deploy your r
 ```bash
 npm run deploy
 ```
+
 It will take some time because the project is getting setup behind the scenes and GitHub is doing all the hardwork of installing React in order to run your project. So have some patience, go drink some coffee or something else you like and once it's done you will see the message: `Published.`
+
+**[Debug]:** If this doesn't happen for some reasons then run this command to make sure the package is installed correctly (just removed this flag from previous command: `--save-dev`):
+
+```bash
+npm install gh-pages
+```
 
 ### STEP J: Navigating to our deployed GitHub page
 
@@ -1289,7 +1296,7 @@ But at what cost?
 
 So the way we will learn is just finding something we want to create and learn what we need to know to create it as we move along the project. We will learn the advance stuff as we move further down the project as required. 
 
-Think of it like you learning a computer. First you will probably learn how to move the cursor (mouse pointer) by holding mouse physically and practice it for some times and get comfortable at it then you move on to learn how to click and open files and folders and then you practice this knowledge for some time until it becomes comfortable. This how you should learn one step at a time and you don't just jump directly to learn advance stuff like how to uninstall the program using control panel beforehand you learn and practice the basics.
+Think of it like you learning a computer. First you will probably learn how to move the cursor (mouse pointer) by holding mouse physically and practice it for some times and get comfortable at it then you move on to learn how to click and open files and folders and then you practice this knowledge for some time until it becomes comfortable. This how you should learn one step at a time and you don't just jump directly to learn advance stuff like how to uninstall the program using control panel beforehand you learn and practice the basics. 
 
 ## Dealing with perfectionism
 
