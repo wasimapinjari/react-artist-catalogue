@@ -1189,10 +1189,10 @@ npm run deploy
 
 It will take some time because the project is getting setup behind the scenes and GitHub is doing all the hardwork of installing React in order to run your project. So have some patience, go drink some coffee or something else you like and once it's done you will see the message: `Published.`
 
-**[Debug]:** If this doesn't happen for some reasons then run this command to make sure the package is installed correctly (just removed this flag from previous command: `--save-dev`):
+**[Debug]:** If you don't see message for some reasons then rerun this command to make sure the `gh-pages` package is installed correctly:
 
 ```bash
-npm install gh-pages
+npm i gh-pages --save-dev
 ```
 
 ### STEP J: Navigating to our deployed GitHub page
