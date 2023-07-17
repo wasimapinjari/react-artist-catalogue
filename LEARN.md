@@ -1,42 +1,105 @@
-# Extreme developer guide for designing premium websites using React ♡
+# Extreme React Guide For Designing Premium Websites ♡
 
-🔗 Live Demo: [https://wasimapinjari.github.io/react-artist-catalogue](https://wasimapinjari.github.io/react-artist-catalogue)
+## Introduction
 
-🔗 Source: [https://github.com/wasimapinjari/react-artist-catalogue](https://github.com/wasimapinjari/react-artist-catalogue)
+### Live Demo
 
-## Screenshot
+[https://wasimapinjari.github.io/react-artist-catalogue](https://wasimapinjari.github.io/react-artist-catalogue)
+
+
+### Screenshot
 
 ![Main preview](public/images/main.png)
 
+### What To Expect From This Guide
+
 This guide is extreme. We're going to build a beautiful React project and deploy it on GitHub Pages from start to finish. 
 
-It's a long article (15,000+ words) because I wanted to detail the whole process and not left anything important out.
+This is a long article (15,000+ words) because I wanted to detail the whole process and not left anything important out.
 
 The curse of knowledge is we often assume other people know what we know. It look so obvious for anyone to know about it. My goal is to not fall for it.
 
 I also added bonus content in the end which are answers to questions that I often get asked by fellow developers. Enjoy!
 
-## Coming up with an idea
+
+## Content
+
+- Introduction 
+- Gathering Resources
+  - Coming Up With An Idea
+  - Asking ChatGPT For Data
+  - Converting Data Into An Array
+  - Searching Images
+  - Cropping Images
+  - Resizing Images 
+- Setting Up React Project
+  - Prerequisites
+  - Installing Cool Terminal [Optional]
+  - Creating Our React Project
+  - Starting Local Development Environment
+  - Deleting Files & Code
+  - Injecting React In HTML Page
+  - Adding Global CSS Properties
+- Building React Project
+  - Creating The Root App Component
+  - Creating The Header Component
+  - Adding Data
+  - Creating The Main component
+  - Creating The Artist Component
+  - Component Tree
+  - Selecting Fonts
+  - Selecting Colors
+  - Revisiting The Images
+  - Compressing Images
+  - Advance Optimizations
+  - Readjusting The website
+  - Rearranging Data
+  - Making The Website Responsive
+  - Adding Custom Favicon
+  - Privacy
+  - Security
+- Deploying To GitHub Pages
+  - STEP A: Installing GitHub Pages Node Package
+  - STEP B: Modifying The JSON File
+  - STEP C: Creating A New GitHub Repository 
+  - STEP D: Getting Access To GitHub Repositories
+  - STEP E: Configuring Git Username & Email
+  - STEP F: Authenticating Using Token
+  - STEP G: Caching GitHub Credentials + How To Delete Them
+  - STEP H: Pushing Current Project On The GitHub Repository
+  - STEP I: Deploying Repository To GitHub Pages
+  - STEP J: Navigating To Deployed GitHub Page
+  - Revealing The Size Of The Website Page
+- Bonus Content [Optional]
+  - How To Learn
+  - Dealing With Perfectionism
+  - Sharing & Applying Knowledge
+  - Learning & Memorization
+  - How To Deal With Motivation
+
+## Gathering Resources
+
+### Coming up with an idea
 
 First I come up with an idea of what I wanted to create. After some thinking I decided to render a list of data in React. It's simple enough that we will not get demotivated with complexity and lose interest. But I don't have any data.
 
-## Asking ChatGPT for Data
+### Asking ChatGPT for Data
 
 I proceed to ask ChatGPT for dummy data. It gave me a dummy data set but I wasn't satisfied. It was too random for anyone to care including myself. I took a deep sigh after staring at my laptop for some time.
 
 I had an idea to ask ChatGPT to give me celebrity artists' data. It gave me 3 different celebrity profiles, I asked to give me at least 10. The data looked quite promising because I didn't know that information about those celebrities myself and I was curious to know that. So I went with this data set.
 
-## Converting data into an array
+### Converting data into an array
 
 I started painstakingly typing out the data in a JavaScript array containing information about each celebrity profile in an individual object then I realize out of nowhere that the ChatGPT can do the work for me. I ask ChatGPT to convert the data into a JavaScript array and voila! I have my data.
 
 ![ChatGPT](public/images/chatgpt.png)
 
-## Searching Images
+### Searching Images
 
 The next step was to search celebrity images. My Google search query look like this: Rihanna portrait white background. There are 10 celebrity images I need but I got tired of searching for the perfect image and I also thought they are too many. So I decided to omit 2 celebrity and work with 8 data profiles instead of 10.
 
-## Cropping Images
+### Cropping Images
 
 ![Cropping Images](public/images/crop.png)
 
@@ -50,7 +113,7 @@ What cropping doesn't fix is the dimensions themselves. So the image size (disk 
 
 The bigger the dimension, the more space it takes, thus the bigger the size of an image.
 
-## Resizing Images
+### Resizing Images
 
 ![Resizing Images](public/images/resize.png)
 
@@ -78,9 +141,11 @@ We're going to resize and compress all of our images in the end as a finishing t
 
 Let's move on...
 
-## Setting up a local React development environment
+## Setting up React Project
 
-**Prerequisites**: Before getting started let's make sure you have node and git installed and after that make sure you have npx installed in node.
+### Prerequisites
+
+Before getting started let's make sure you have Node and Git installed and after that make sure you have npx installed in node.
 1. Go to https://nodejs.org and install the LTS version (recommended for most users) of the node.
 2. Go to https://git-scm.com and install Git by clicking on the next button of the installer until you hate your life.
 3. Install npx by typing the below command in the terminal.
@@ -91,7 +156,7 @@ npm i -g npx
 
 Here i stands for install, -g is a flag that will install this package globally so that you don't have to keep installing it all the time and npx stands for Node Package eXecute, it is simply an NPM package runner. It allows developers to execute any Javascript Package available on the NPM registry without even installing it and for those curious people out there NPM registry is just a database of JavaScript packages which contains software and metadata (data about the data is called metadata).
 
-## Installing cool terminal [Optional]
+### Installing Cool Terminal [Optional]
 
 This is optional but I highly recommend downloading this cool looking terminal, especially if you're on windows because their command line looks quite ugly.
 
@@ -109,7 +174,7 @@ If you do decide to download it I want you to set things up a bit.
 
 ![Hyper application](public/images/hyper.png)
 
-## Creating our React project
+### Creating Our React Project
 
 You might have downloaded the terminal that I suggested. You can now go ahead and right click on the desktop and click on `Open hyper here` to open up hyper on Desktop. 
 
@@ -142,9 +207,9 @@ Here `.` means open the current folder in the VS Code. If you want to open speci
 
 ![Creating a new React project](public/images/vscode-open-project.png)
 
-## Starting React local development environment
+### Starting Local Development Environment
 
-Step to start React local development environment: 
+Step to start local development environment: 
 
 1. Open the terminal in VS code by going to the VS code menu on the top left of VS code application window and in that click on view tab and then click on Terminal or alternatively press Ctrl (Mac: Command) + ` (Backtick) key on the keyboard.
 
@@ -175,18 +240,15 @@ You can change the default browser in setting on your OS (operating system). For
 
 ![Changing windows default apps step 2 and 3](public/images/windows-change-default-apps-step-2-and-3.png)
 
-
-
-## Deleting files & code
+### Deleting Files & Code
 
 The first thing I did is deleting unnecessary files from the src folder. I only kept 3 files: `index.js`, `index.css` and `App.js`.
 
 I then went ahead and deleted everything that was written inside both files so that I end with empty files.
 
-
 ![Deleting React files in src folder](public/images/vscode-deleting-files.png)
 
-## Injecting React In HTML Page
+### Injecting React In HTML Page
 
 In the `index.js` file I wrote the basic boilerplate (reusable) code to inject React in the pre-written (by the create-react-app tool) HTML page which is located in the public folder. To be specific we inject React in the div element with the id: `root` written in the HTML page. 
 
@@ -227,7 +289,8 @@ While React Virtual DOM looks like this (I will explain this later in detail and
 
 I also imported our `index.css` and `App.js` file which is located in the same folder. I wrap the App component with React.StrictMode component because by doing that React will run the code twice and a second time just to make sure there are no errors and bugs in our application and if there are then it will give us warnings.
 
-## Adding global CSS properties
+### Adding Global CSS Properties
+
 ```css
 /* index.css */
 
@@ -249,7 +312,9 @@ What we want instead is to be able to specify height and width in css and have t
 
 Let's talk about font-size: I set font size to 62.5% because I want to create responsive web design and for that I will use reponsive units which is rem (which is also called as root em and em is just a reference to the width of capital letter "M" of font used) and 1 rem is equal to 16 px. So if I had to create 50 px height and width box then I had to go to this weird calculation like 50 px divide by 16 is equal to 3.125 rem in order to convert px in rem units. To fix that we will change the defaullt setting of 1 rem is equal to 16 px and find a way to make 1 rem is equal to 10 px so making calculation will be easier like 50 px divided by 10 will be 5 rem. Currently 100% is equals to 16 px so 100 divide by 16 and multiplied by 10 is 62.5%.
 
-## Creating the root `App` component
+## Building React Project 
+
+### Creating The Root `App` Component
 
 I created a new file called App.js inside src folder and created App component inside the file. Now the game plan is to create 2 components within our main root App component: `Header` and `Main`.
 
@@ -380,7 +445,7 @@ I wrap both components `<Header>` & `<Main>` with a div with a class name: `cont
 }
 ```
 
-## Creating the `Header` component
+### Creating The `Header` Component
 
 I created the `Header` component file file in src folder and wrote the primary heading that I wanted to display and enclose it in the `h1` tag. I will explain how I choose fonts later because initially I was working with default fonts.
 
@@ -430,7 +495,7 @@ h1 {
 
 Here I set font-weight to unset because I was playing around with different fonts and the browsers have a default stylesheet applied where by default all headings are bold and I don't want that.
 
-## Adding the data
+### Adding Data
 
 I created a folder called data in src folder and created a celebrityArtists.js file inside it. In that file I added the data that I told CHatGPT to write for me and a additional field called `photoSrc` to each profile data to reference the location of images I stored in the public folder of our React app in a folder named `artists`. React will fetch everything in the public folder and you can provide direct path like this: `artists/Beyoncé.jpg.`
 
@@ -509,7 +574,7 @@ const celebrityArtists = [
 export default celebrityArtists;
 ```
 
-## Creating the `Main` component.
+### Creating The `Main` component
 
 I created the `Main` component and wrote the secondary heading and enclose it in the `h2` tag. I created an unordered list to render the artist profile list dynamically. I decided to create a new `Artist` component to render individual artist profile data by performing the map method on the celebrityArtists data array.
 
@@ -621,7 +686,7 @@ h2 {
 }
 ```
 
-## Creating the `Artist` component.
+### Creating The `Artist` Component
 
 I created the `Artist` component and I receive the data we send from the Main component through props. As I said we will receive the data in JavaScript object called as props (and we can name props anything we want as a parameter). I destructure the object immediately in the parameter instead writing word props that I was receiving to avoid writing props words everywhere in the component. 
 ```js
@@ -760,7 +825,7 @@ I wanted to create a frame around images with a border so I use the `clip-path` 
 
 I just went with creating the illusion of a border by adding the same `clip-path` property to the image container and adding background color and having the image on the top of the container. I slightly resize the image to 2 px smaller than the container and centered it inside it to create the illusion of a border. So yeah it is not a real border.
 
-## Component Tree
+### Component Tree
 
 We created all the necessary components for our React application with this components now you can bascially draw a React component tree starting from our root App component. So our parent root App component have two childrens Header component and Main component and our Main component have 8 Artist components as children in this case the Main component is their parent component and we pass unique data in those components using props. We can only pass data from parent to children component and not the around way around since React implement one way data flow approach, in this data can only flow in one direction which is from parent to child component only.
 
@@ -784,9 +849,13 @@ How to see React developer tools in action:
 
 The way you may find bugs and errors is by inspecting the props object that you're passing in components and seeing if you mispelled something. You can also see how the key props that we write in Artist component is helping React identify each component uniquely that we didn't actually receive as prop in props object.
 
-## Selecting Fonts
+### Selecting Fonts
 
-I was working with default fonts initially which I didn't like. Since the main work is done now it's time to hunt for cool fonts. 
+Before we begin I do like to point out that normal way of working is first making a rough design (wireframe), then designing the website in softwares like Figma, Adobe XD, etc. and then coding the design. 
+
+So you may select fonts, colors, etc in the beginning. My approach is little weird. I'm going reverse.
+
+I was working with default fonts initially which I didn't like. Now since the main work is done now it's time to hunt for cool fonts. 
 
 For the primary heading, I wanted a cursive font that is readable at a single glance. I don't want someone to exert effort trying to understand what's written.
 
@@ -815,7 +884,7 @@ Selected Fonts:
 - Playfair Display (Serif)
 - Style Script (Handwriting)
 
-## Selecting Colors
+### Selecting Colors
 
 Since we're in the glamour industry I ask chatGPT to suggest a color palette based on it. It gave me 10 different color names and I ask it (complained) to give me hex codes of those colors. I try each one of them to find something I end up liking. Alternatively, you can go to https://colorhunt.co to find colors.
 
@@ -824,7 +893,7 @@ Selected Colors:
 - Pearl White: #FFB6C1
 - Medium shade of Gray: #444444 (same as: #444)
 
-## Revisiting the images
+### Revisiting The Images
 
 As you know we moved on from working on images after cropping them because we didn't know how much screen space (in height and width) we will allow these images to take on our website. And you probably realized by now after reading the CSS code that I end up giving images 120 px in height and width. So now we know the dimensions we can finally resize our images to further lower the image size without destroying the quality completely.
 
@@ -835,7 +904,7 @@ Considering that 120 px multiplied by 3 we get 360 px. I will try to resize imag
 
 Yeh! We're done with resizing images.
 
-## Compressing Images
+### Compressing Images
 
 ![Compressing Images](public/images/compress.png)
 
@@ -843,7 +912,8 @@ After the resize I bring all image sizes down to around 60 KB to 100 KB. So the 
 
 After compression, all image sizes got down to around 45 KB to 65 KB. Which might not look much but it's a huge improvement. 
 
-## Advance Optimizations
+### Advance Optimizations
+
 If you want to go crazier on optimization you can even have different sizes of the same images with different dimensions that get displayed depending on where it's getting rendered.
 
 For example, if your website is getting rendered on a small phone then those extra dimensions are useless and you're better off sending an image of the exact dimensions, which in turn allows you to lower the size even further and thus your website will load even faster on a mobile device. And for computer users, you send the image which is larger than the required size for catering to big screen needs.
@@ -860,7 +930,7 @@ Some websites implement a bad algorithm to perform a task that takes way more ti
 
 With all those seemingly tiny adjusments, compressions and optimizations here and there you will end up with a blazing fast website that loads like a butter.
 
-## Readjusting the website
+### Readjusting The Website
 
 Now I was quite happy with the fonts, colors, and the actual content. I wanted to make some adjustments: I play around with spacing the content and making sure it looks good, not too cramped together, and not too spaced apart.
 
@@ -902,7 +972,7 @@ body {
 }
 ```
 
-## Rearranging data
+### Rearranging Data
 
 I feel like I need to rearrange the data to make the images look more put together. So I rearranged the data to change the order in which React render them. 
 
@@ -981,7 +1051,7 @@ const celebrityArtists = [
 ];
 ```
 
-## Making the website responsive
+### Making The Website Responsive
 
 Lastly, I realize that my website is not responsive. So I made it responsive using media queries. I like to select media query points based on where my design breaks. 
 
@@ -1016,7 +1086,7 @@ I also like to have some reference websites that I compare my design to at diffe
 }
 ```
 
-## Adding Custom Favicon
+### Adding Custom Favicon
 
 Favicon is just a +
 short way of saying favorite icon. It is what get's displayed along with the title in the browser tab.
@@ -1092,10 +1162,11 @@ Congrats! You did it.
 ![Chrome custom favicon](public/images/chrome-custom-favicon.png)
 
 
-## Privacy
+### Privacy
+
 If you're working with clients you need to make sure you are letting them know whenever you're using external API to fetch resources like fonts, images, icons, weather or jokes data to display on their website this is because some people may not be okay with other website receiving IP address of the person requesting those resources and if they are not okay with that then you need to make sure to download those resources and find a way to serve from the place wherever the website is hosted.
 
-## Security 
+### Security 
 
 This React project is too basic for us to worry about security but just because your website is static that doesn't mean you aren't a delicious target for hackers who may have nothing better to do for fun than just finding a way to take advantage of your innocence. 
 
@@ -1140,7 +1211,7 @@ I modified the setting according to my needs as I installed Google analytics in 
 
 ![Wasim personal website](public/images/wasim-personal-website-headers.png)
 
-## Deploying our project to GitHub pages
+## Deploying To GitHub Pages
 
 Congratutions you reach the final boss of the game.
 
@@ -1158,13 +1229,13 @@ Below is the complete process I went through step-by-step to conquer the boss of
 
 **Note:** Today is 04/07/2023 as I am writing this. So the GitHub website UI might going to change in future and the instructions might not follow suit because I am lazy or busy doing something else and not only that this applies to this whole article. So be sure to check the latest React, Git and GitHub documentation.
 
-### STEP A: Installing GitHub pages node package
+### STEP A: Installing GitHub Pages Node Package
 1. First thing we need to deploy our project on GitHub pages is to install a package named `gh-pages` and save it as a development dependency using `--save-dev` flag. As we only need this package in the development phase and there is no need to install this pakage when the project is deployed live.
 ```bash
 npm i gh-pages --save-dev
 ```
 
-### STEP B: Modifying the `package.json` file
+### STEP B: Modifying The JSON file
 1. Now we need to modify the `package.json` file of our project. This is located in the project folder itself and you don't have to go any deeper in other folders that are present in the project folder.
 
 ![VS code pakage json location](public/images/vscode-react-json-package.png)
@@ -1229,8 +1300,8 @@ npm i gh-pages --save-dev
 }
 ```
 
-### STEP C: Creating a new GitHub repository 
-1. Open your browser and login to your GitHub account.
+### STEP C: Creating A New GitHub Repository 
+1. Open your browser and login to your GitHub account (if you don't have one create it).
 2. On the left hand side of the GitHub UI click on the green `New` button.
 
 ![GitHub new repository create button](public/images/github-new-repository.png)
@@ -1248,7 +1319,7 @@ git push -u origin main
 ```
 ![GitHub repository setup guide](public/images/github-new-repository-setup-guide.png)
 
-### STEP D: Getting access to our GitHub repositories
+### STEP D: Getting Access To GitHub Repositories
 1. Open your browser and login to our GitHub account.
 2. Go to your account `Settings`. UI may change in future, but currently you can do that by clicking on your profile picture in the top right of GitHub UI and that will open navigation pane in the right side of the screen and then navigate to settings with the gear icon.
 
@@ -1277,7 +1348,7 @@ git push -u origin main
 
 ![GitHub generated token](public/images/github-generated-token.png)
 
-### STEP E: Configuring git user name and email
+### STEP E: Configuring Git Username & Email
 1. First I open the terminal inside the project folder. You can do that by clicking on `View` which is located on the top of the VS Code application in the `Menu Bar` and from the drop-down list click on `Terminal` to do just that.
 2. Config your github name and email address. I wrote my middle name "A" in it you can skip middle name and write only your first and the last name. Caution: Do not write my name and email address. WRITE YOURS!
 ```bash
@@ -1289,7 +1360,7 @@ Here we use --global flag to make sure we don't have to type that again and if y
 git config --global --unset-all user.name
 git config --global --unset-all user.email
 ```
-### STEP F: Authenticating using token
+### STEP F: Authenticating Using Token
 1. Next we will try to push our project on the GitHub repository that we created in STEP C like so:
 ```
 git remote add origin https://github.com/wasimapinjari/react-artist-catalogue.git
@@ -1298,7 +1369,8 @@ git remote add origin https://github.com/wasimapinjari/react-artist-catalogue.gi
 
 3. **Debug:** You might not see any pop-up window but instead in command line you are prompted to type your GitHub account username (in my case it is: wasimapinjari) and then as a password paste the token.
 
-### STEP G: Caching and removing GitHub credentials
+### STEP G: Caching GitHub Credentials + How To Delete Them
+
 1. The annoying thing about this authentication is that you have to do it again and again every time you want access. So to solve this problem we will save GitHub credentials in Git and to do that we have to run this command:
 ```bash
 git config --global credential.helper cache
@@ -1311,7 +1383,7 @@ git config --global --unset credential.helper
 ```
 This is one of the reason why using token is safer than login with actual GitHub username and password and why we're setting expiry period on our tokens. So that even if you forget to delete the credentials then it will expire itself and you can then just simply regenerate a new token.
 
-### STEP H:  Pushing our current project on the GitHub repository
+### STEP H: Pushing Current Project On The GitHub Repository
 
 1. To push our current project on the GitHub repository we will run this commands in order:
 ```bash
@@ -1339,7 +1411,7 @@ git push
 ```
 
 Now if you don't understand why we're doing all this.
-### STEP I: Deploying our repository to GitHub pages
+### STEP I: Deploying Repository To GitHub Pages
 
 After the local repository gets uploaded successfully. You can now deploy your repository by running this command:
 ```bash
@@ -1354,7 +1426,7 @@ It will take some time because the project is getting setup behind the scenes an
 npm i gh-pages --save-dev
 ```
 
-### STEP J: Navigating to our deployed GitHub page
+### STEP J: Navigating To Deployed GitHub Page
 
 Finally we reached the end. The only thing that is left is to open our GitHub page to see the fruit of our labour.
 
@@ -1429,7 +1501,7 @@ Here is how you can find the link of deployed page:
 
     - To see the images working again close the terminal and rerun the npm start command to start local development environment again.
 
-## Revealing the size of our website
+### Revealing The Size Of The Website Page
 
 You might be curious about the size of our website. So I check it on https://tools.pingdom.com and it is `562.5 KB`.
 
@@ -1441,7 +1513,7 @@ That's it. Love you guys, see you next time. Bye!
 
 This is a bonus content that I wrote containing answer to some question that I get asked by my fellow friends who are learning code. 
 
-## How to learn
+### How To Learn
 
 The learning approach we follow here is called learn as you do approach. To explain this imagine you want to go to from destination A to B. In this case is it useful to know the whole map of the area instead of just the path from destination A to B? 
 
@@ -1457,7 +1529,7 @@ The way you is just finding something you want to create and learn what we need 
 
 Think of it like you learning a computer. First you will probably learn how to move the cursor (mouse pointer) by holding mouse physically and practice it for some times and get comfortable at it then you move on to learn how to click and open files and folders and then you practice this knowledge for some time until it becomes comfortable. You learn one step at a time and you don't just jump directly to learn stuff like how to uninstall the program using control panel beforehand you learn and practice the basics.
 
-## Dealing with perfectionism
+### Dealing With Perfectionism
 
 If you're a perfectionist like myself you may want to learn everything beforehand to reduce your likelihood of suprises as you move along the journey. This is a form of procrastination to prevent yourself from failing and having people find holes in your knowledge and called you a loser. It may be not okay for you to embarrass yourself by not knowing what to do and asking foolish questions that your lack of knowlege will make you ask so that's why you may be striving to know all answers beforehand.
 
@@ -1491,7 +1563,7 @@ Sometimes someone is not nice to you and you may want to return the favour but m
 
 Hopefully as you start getting more financially free you will be able to decide how, when, where and with whom you spend your time with and be able to relocate somewhere where you are surrounded by nice people if you're in toxic environment.
 
-## Sharing & applying knowledge
+### Sharing & Applying Knowledge
 
 Some people love money and they go out of their way to accumulate as much as they can even if they don't know what they will do with that money. We call them greedy. It turns out some people are knowledge-greedy they want to accumulate as much knowledge as they can without ever stopping and asking what is the use of it. Is it for giving advice and looking smart? Or is their any actual purpose behind it?
 
@@ -1513,7 +1585,7 @@ You can share your knowlege through blog, podcast or making videos on Youtube. A
 
 There are a lot of ways to share your knowledge and contributing to open source. It is fun too as your're actively learning and applying your knowledge and getting instant feedback from people who're quite experienced than you for you to improve your skills quickly. This also help you network with right people who actively follow your work and they may offer you with awesome opportunities or you can actively ask them if they have any opportunities for you.
 
-## Learning & memorization
+### Learning & Memorization
 
 Learning and forcing yourself to recall the knowledge by teaching it to someone else and applying to your project immediately is a form of active recall.
 
@@ -1535,7 +1607,7 @@ This is what make stories powerful when teaching someone. Stories are filled wit
 
 Brain studies shows us that imagining something is similar to actually doing the thing in the real life. Imagination light up the same areas of our brain that real actual experience does. That mean if you have a tendency to live in a fantasy world then that probably going to make you demotivated to purse the actual stuff because you already receive the rewards of doing the actual thing just by imagining and fantasizing about it. You receive the reward that cause the motivation to seek it in the first place without the risks associated with going after something that you might not get. Doing too much of anything is a bad thing. Imagining good things may make you purse them but don't do it too much as it will cause you to lose interest in them slowly and make you chase something new and the cycle will repeat itself.
 
-## Motivation
+### How To Deal With Motivation
 
 People who struggle with motivation are often people who are addicted to something that is sucking them dry out of motivation.
 
