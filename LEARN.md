@@ -1503,7 +1503,7 @@ Here is how you can find the link of deployed page:
 
 ### Revealing The Size Of The Website Page
 
-You might be curious about the size of our website. So I check it on https://tools.pingdom.com and it is `562.5 KB`.
+You might be curious about the size of our website. So I check it on https://tools.pingdom.com and it is `584.9 KB`.
 
 That's it. Love you guys, see you next time. Bye!
 
