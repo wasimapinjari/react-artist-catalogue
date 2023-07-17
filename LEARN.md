@@ -52,7 +52,7 @@ I also added bonus content in the end which are answers to questions that I ofte
   - Revisiting The Images
   - Compressing Images
   - Advance Optimizations
-  - Readjusting The website
+  - Making Readjustments
   - Rearranging Data
   - Making The Website Responsive
   - Adding Custom Favicon
@@ -75,7 +75,7 @@ I also added bonus content in the end which are answers to questions that I ofte
   - Dealing With Perfectionism
   - Sharing & Applying Knowledge
   - Learning & Memorization
-  - How To Deal With Motivation
+  - Way Motivation Works
 
 ## Gathering Resources
 
@@ -930,7 +930,7 @@ Some websites implement a bad algorithm to perform a task that takes way more ti
 
 With all those seemingly tiny adjusments, compressions and optimizations here and there you will end up with a blazing fast website that loads like a butter.
 
-### Readjusting The Website
+### Making Readjustments
 
 Now I was quite happy with the fonts, colors, and the actual content. I wanted to make some adjustments: I play around with spacing the content and making sure it looks good, not too cramped together, and not too spaced apart.
 
@@ -1607,7 +1607,7 @@ This is what make stories powerful when teaching someone. Stories are filled wit
 
 Brain studies shows us that imagining something is similar to actually doing the thing in the real life. Imagination light up the same areas of our brain that real actual experience does. That mean if you have a tendency to live in a fantasy world then that probably going to make you demotivated to purse the actual stuff because you already receive the rewards of doing the actual thing just by imagining and fantasizing about it. You receive the reward that cause the motivation to seek it in the first place without the risks associated with going after something that you might not get. Doing too much of anything is a bad thing. Imagining good things may make you purse them but don't do it too much as it will cause you to lose interest in them slowly and make you chase something new and the cycle will repeat itself.
 
-### How To Deal With Motivation
+### Way Motivation Works
 
 People who struggle with motivation are often people who are addicted to something that is sucking them dry out of motivation.
 
