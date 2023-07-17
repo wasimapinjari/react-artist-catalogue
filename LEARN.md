@@ -76,9 +76,9 @@ This is bad because we want our website to load fast and for that, we must reduc
 
 We're going to resize and compress all of our images in the end as a finishing touch to our website because we currently don't know how much screen space (in height and width) we will allow these images to take on our website.
 
-So let's move on...
+Let's move on...
 
-## Setting up a local React development environment
+## Setting up a local React dev.elopment environment
 
 **Prerequisites**: Before getting started let's make sure you have node and git installed and after that make sure you have npx installed in node.
 1. Go to https://nodejs.org and install the LTS version (recommended for most users) of the node.
@@ -188,7 +188,9 @@ I then went ahead and deleted everything that was written inside both files so t
 
 ## Injecting React In HTML Page
 
-In the `index.js` file I wrote the basic boilerplate (reusable) code to inject React in the pre-written (by the create-react-app tool) HTML page which is located in the public folder. To be specific we inject React in the div element with the id: `root` written in the HTML page.
+In the `index.js` file I wrote the basic boilerplate (reusable) code to inject React in the pre-written (by the create-react-app tool) HTML page which is located in the public folder. To be specific we inject React in the div element with the id: `root` written in the HTML page. 
+
+This is also a good time for you to change the title of the page in HTML document from `React App` to `Artist Catalogue`.
 
 ![React HTML file location](public/images/vscode-html-file-location.png)
 
@@ -316,7 +318,7 @@ export { name, skill, sum, multiply };
 
 // we can have this statements as many as we want throughout javascript file
 
-// we skip here putting dontExport constant in export statement because we don't want it and don't have to
+// we skip here putting dontExport constant in export statement because we don't want it and don't have to as we don't have to export everything
 ```
 
 ```js 
@@ -324,7 +326,9 @@ export { name, skill, sum, multiply };
 
 import exportData, { name, skill, sum } from "./export.js"
 
-// we didn't import multiply because we don't want to
+// we didn't import multiply because we don't want to as we don't have to import everything that we're exporting
+
+// we write "./" to import file from the point of folder (level) where the current file we're working on is located. It's like here we're saying import export.js from the same folder where import.js located. If we want a file which is outside the current file's folder location then we use "../" to go a one level up from the current location. It's like saying look for this file outside of this curent folder
 
 console.log(name); // Wasim
 console.log(skill); // { HTML: "Advanced", JavaScript: "Intermediate", Git: "Beginneer" }
@@ -1012,6 +1016,82 @@ I also like to have some reference websites that I compare my design to at diffe
 }
 ```
 
+## Adding Custom Favicon
+
+Favicon is just a +
+short way of saying favorite icon. It is what get's displayed along with the title in the browser tab.
+
+To change it from React icon to custom icon we will first create it, then remove the background and auto generate different dimensions for different devices and add it into our React app. And Boom! We successfully added a custom icon!
+
+![Chrome react favicon](public/images/chrome-react-favicon.png)
+
+We will be using Canva to create favicon. Go to [https://www.canva.com](https://www.canva.com) and create a account. Now click on the purple `Create a design` button in the top right of the website. Here you have to search for `instagram post` template and the select the square one. 
+
+![Searching for template in Canva](public/images/canva-searching-template.png)
+
+Canva will present you with different instagram post designs and you have to select `Create blank`.
+
+![Selecting blank template in Canva](public/images/canva-selecting-blank-template.png)
+
+In the blank page create a favicon icon design. You upload a design, or search for pre-made designs using the search bar on the top-right of the screen or you can simply use different shapes like line, circle, rectange, etc. to draw your unique design. I will be using a diamond shape that I have.
+
+![Searching pre-made design in Canva](public/images/canva-searching-for-design.png)
+
+Once you done with the design go to top-right corner of the website and click on white `Share` button and then on white `Download` button.
+
+![Share button on Canva](public/images/canva-share.png)
+
+Now you have to make a decision. You can either have your favicon with transparent background or you don't. There is no compulsion.
+
+If you want to have a transparent background then you can download the design with transparent background, there is a checkbox for Canva Pro members (are you?) that they can tick to do that. Since I'm a free member I have to do little work.
+
+After that click on purple `Download` button. 
+
+![Download button on Canva](public/images/canva-download.png)
+
+If you're a free member and wanted a transparent background then you probably downloaded the design with a background. Let's fix that. Go to this tool: [https://removal.ai/upload](https://removal.ai/upload) and upload the downloaded image. 
+
+After processing you can download the image with a transparent background by clicking on the blue `Download` button.
+
+![Removing background using AI](public/images/removing-background.png)
+
+I realise the color of transparent image that I downloaded doesn't match the website theme color. So I quickly opened that image in Paint 3D (Windows application) and change the color using color bucket (Fill).
+
+![Changing color in paint 3d](public/images/changing-color-in-paint-3d.png)
+
+We need different image files with varying dimension (height and width) of the same favicon design to make this favicon design work across various devices. 
+
+This is painful to do and that's why we won't going to do this. There is a tool that will help us auto generate all the neccessary files to make the favicon design work. 
+
+Go to [https://favicon.io/favicon-converter](https://favicon.io/favicon-converter) and upload the transparent (or not transparent) image there and click on the blue `Download` button. Don't close the tab yet! We're not done.
+
+![Auto generating favicon files](public/images/auto-generating-favicon-files.png)
+
+Open the downloaded zip and select all the files and drag it into the public folder of our project. You will get a prompt asking you if you want to replace the previous files inside it then click on the replace option.
+
+![Pasting favicon files in public folder](public/images/pasting-favicon-files-in-public.png)
+
+Scroll down the website from where you downloaded the zip and copy the HTML tags to inject it into our React app HTML page.
+
+![Copying favicon html](public/images/copying-favicon-html.png)
+
+Go to the public folder of our React app and open the `index.html` file. Paste the HTML tags that you copied just above the title tag in the head of the HTML document. 
+
+Once you're done with pasting, you will notice there are similar tags already present in the HTML document with `href` attribute written slightly different than the ones you just copied. 
+
+What you have to do is use the similar format for your tags, instead of having href starting from `/apple-touch-icon.png` change that to `%PUBLIC_URL%/apple-touch-icon.png`. 
+
+I prefer to keep the old tags pre-written by React but you can delete it if you want.
+
+Once you're done, save the file and go to [https://localhost:3000](https://localhost:3000) to see the result. You may need to restart the local development environment if you don't see any changes.
+
+![Pasting favicon html](public/images/pasting-favicon-html.png)
+
+Congrats! You did it.
+
+![Chrome custom favicon](public/images/chrome-custom-favicon.png)
+
+
 ## Privacy
 If you're working with clients you need to make sure you are letting them know whenever you're using external API to fetch resources like fonts, images, icons, weather or jokes data to display on their website this is because some people may not be okay with other website receiving IP address of the person requesting those resources and if they are not okay with that then you need to make sure to download those resources and find a way to serve from the place wherever the website is hosted.
 
@@ -1369,19 +1449,19 @@ Definitely, you will know every single road including road to the destination A 
 
 But at what cost? 
 
-1. You wasted a lot of time learning the whole thing considering the fact that there might be no shortcuts from destination A to B and you just wasted your time learning the whole map that you're eventually going to forget if you don't find a way to use your learned knowledge repeatedly, since you lose what you don't use. I remember sitting through a boring 4-hour long video editing course just to never apply that knowledge anywhere.
+1. You wasted a lot of time learning the whole thing considering the fact that there might be no shortcuts from destination A to B and you just wasted your time learning the whole map that you're eventually going to forget if you don't find a way to use your learned knowledge repeatedly.
 
-2. It's extremely demotivating because you don't know when the action will begin. You're just learning and learning without any visible outcomes. I had friends who got jobs without having any deep knowledge and became really good as they got experienced by learning just enough to do the actual work. I am always in awe of how fast they acquire the so called deep knowledge as I listen to them talk about the cool things they learn at work. I got told by those same friends that I know enough and should apply for a job and learn the other things at work. It's way more fun to get paid (motivation fuel) for learning than just grinding out tutorial after tutorial for nothing (demotivating factor).
+2. It's extremely demotivating because you don't know when the action will begin. You're just learning and learning without any visible outcomes.
 
-So the way we will learn is just finding something we want to create and learn what we need to know to create it as we move along the project. We will learn the advance stuff as we move further down the project as required. 
+The way you is just finding something you want to create and learn what we need to know to create it as you move along the project.
 
-Think of it like you learning a computer. First you will probably learn how to move the cursor (mouse pointer) by holding mouse physically and practice it for some times and get comfortable at it then you move on to learn how to click and open files and folders and then you practice this knowledge for some time until it becomes comfortable. This how you should learn one step at a time and you don't just jump directly to learn advance stuff like how to uninstall the program using control panel beforehand you learn and practice the basics. 
+Think of it like you learning a computer. First you will probably learn how to move the cursor (mouse pointer) by holding mouse physically and practice it for some times and get comfortable at it then you move on to learn how to click and open files and folders and then you practice this knowledge for some time until it becomes comfortable. You learn one step at a time and you don't just jump directly to learn stuff like how to uninstall the program using control panel beforehand you learn and practice the basics.
 
 ## Dealing with perfectionism
 
-I am perfectionist myself so that's why I wanted to learn everything beforehand to create something of massive value but I realize this is a form of procrastination to prevent myself from failing and having people find holes in my work and called me a loser. It was not okay for me to embarrass myself by not knowing what to do and asking foolish questions that my lack of knowlege will make me ask so that's why I strive to know all answers beforehand.
+If you're a perfectionist like myself you may want to learn everything beforehand to reduce your likelihood of suprises as you move along the journey. This is a form of procrastination to prevent yourself from failing and having people find holes in your knowledge and called you a loser. It may be okay for you to embarrass yourself by not knowing what to do and asking foolish questions that your lack of knowlege will make you ask so that's why you may be striving to know all answers beforehand.
 
-I feel as if they will get impatient as I am trying to figure out stuff and lose interest or worse find someone else and I won't even going to have time to prove myself. This is all false I know. People want to help and find great joy in feeling useful to the community they derive satisfaction and meaning from it and people who don't want to help I can just simply ignore and find someone else who find my attention enticing. I can't please everyone and not everyone is worth pleasing.
+You may feel like people will get impatient as I am trying to figure out stuff and lose interest or worse find someone else and I won't even going to have time to prove myself. This is all false I know. People want to help and find great joy in feeling useful to the community they derive satisfaction and meaning from it and people who don't want to help I can just simply ignore and find someone else who find my attention enticing. I can't please everyone and not everyone is worth pleasing.
 
 It doesn't help to think of yourself as somebody who don't really care about what people think and placing higher value on what you think of yourself. You care about what people think bacause life is hard and we often need other people's help to get by even if you think people don't think about you as much you will still try to make them care about you and for that you make sure their opinion of you is mostly positive by doing approval seeking things like showing how good you're at something or something similiar so that they think you're worthy of there attention.
 
@@ -1417,16 +1497,17 @@ Some people love money and they go out of their way to accumulate as much as the
 
 Most of human happiness comes from sharing. You will derive more pleasure and happiness by sharing and seeing your sibling eat chocolates that you bought for yourself than eating all by yourself. Optimizing and managing happiness is a skill and some ways you can increase your happiness is by:
 
-- making enough money to solve your money problems of your life
+- making enough money to solve your life's money problems
 - getting out of toxic environment
+- getting rid of toxic people (don't kill them!)
 - fixing your diet
 - getting in better shape
 - having healthy relationships with others
 - getting quality sleep
-- quitting social media
+- limiting or quitting social media
 - sending quality time with loved ones
 
-You get the idea. For this reason I will welcome you to share your knowledge and learn in public. This will help you with happiness and also help you build your portfolio to show your work to potential clients and employeers. People need certainity in life the more certain (also a cause of perfectionism) they are the easier is it for them to make decisions so having your good work out in public will make your clients and employeers certain that they are not making a mistake by hiring you.
+That's come examples for you. Since happiness is important I will welcome you to share your knowledge and learn in public. This will help you with happiness and also help you build your portfolio to show your work to potential clients and employeers. People need certainity in life the more certain (also a cause of perfectionism) they are the easier is it for them to make decisions so having your good work out in public will make your clients and employeers certain that they are not making a mistake by hiring you.
 
 You can share your knowlege through blog, podcast or making videos on Youtube. Alternatively you can do some open-source work which is basically contributing to some open source project. So you find some project that will catch your attention and learn thing that you need to know in order to make contribution and you can make contribution by first joining the project community and taking a tour of the project and slowing you will get a sense of the project and you will be able to open issues that you're finding, fixing those issues or seeing through the already open issues by people and solving them, fixing or creating documentation, creating resources (blog, videos, etc.), making people aware of project by speaking about it in events, etc.
 
