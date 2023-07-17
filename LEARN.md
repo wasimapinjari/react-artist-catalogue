@@ -10,7 +10,7 @@
 
 This guide is extreme. We're going to build a beautiful React project and deploy it on GitHub Pages from start to finish. 
 
-It's a long article (17,000+ words) because I wanted to detail the whole process and not left anything important out.
+It's a long article (15,000+ words) because I wanted to detail the whole process and not left anything important out.
 
 The curse of knowledge is we often assume other people know what we know. It look so obvious for anyone to know about it. My goal is to not fall for it.
 
