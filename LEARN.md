@@ -10,7 +10,7 @@
 
 This guide is extreme. We're going to build a beautiful React project and deploy it on GitHub Pages from start to finish. 
 
-It's a long article (16,000+ words) because I wanted to detail the whole process and not left anything important out.
+It's a long article (15,000+ words) because I wanted to detail the whole process and not left anything important out.
 
 The curse of knowledge is we often assume other people know what we know. It look so obvious for anyone to know about it. My goal is to not fall for it.
 
@@ -446,7 +446,7 @@ const celebrityArtists = [
     nationality: "American",
     genre: "R&B, Pop",
     yearsActive: "1997-present",
-    photoSrc: "artists/Beyoncé.jpg",
+    photoSrc: "artists/Beyoncé.png",
   },
   {
     artistName: "Justin Bieber",
@@ -944,7 +944,7 @@ const celebrityArtists = [
     nationality: "American",
     genre: "R&B, Pop",
     yearsActive: "1997-present",
-    photoSrc: "artists/Beyoncé.jpg",
+    photoSrc: "artists/Beyoncé.png",
   },
   {
     artistName: "Ariana Grande",

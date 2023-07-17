@@ -29,7 +29,7 @@ const celebrityArtists = [
     nationality: "American",
     genre: "R&B, Pop",
     yearsActive: "1997-present",
-    photoSrc: "artists/Beyoncé.jpg",
+    photoSrc: "artists/Beyoncé.png",
   },
   {
     artistName: "Ariana Grande",
