@@ -6,7 +6,7 @@
 
 ![Preview screenshot](public/images/main.png)
 
-## `17,000+ words` article on how I build this project
+## `15,000+ words` article on how I build this project
 🔗 Article Link: [LEARN.md](LEARN.md)
 
 ## ✨ Getting Started:
