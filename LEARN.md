@@ -78,7 +78,7 @@ We're going to resize and compress all of our images in the end as a finishing t
 
 Let's move on...
 
-## Setting up a local React dev.elopment environment
+## Setting up a local React development environment
 
 **Prerequisites**: Before getting started let's make sure you have node and git installed and after that make sure you have npx installed in node.
 1. Go to https://nodejs.org and install the LTS version (recommended for most users) of the node.
