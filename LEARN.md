@@ -1655,10 +1655,21 @@ If you take a rat and remove all dopamine from its brain. It will be still able 
 
 If you feel like doing nothing and demotivated to purse anything. You are like that that rat with depleted dopamine. You may still enjoy pleasurable activity (not to that extend it used to) but you won't be motivated to pursue any of those. You will want to sit there and do nothing.
 
+But why you just can't control yourself?
+
+This is because your pursuit of too much dopamine changes your brain slowly over time to overcompensate for the abnormal activity. What this changes looks like:
+
+- You get desensitize to pleasure (thus making you seek it in extreme ways)
+- You become hypersensitive to certain cues (both internal and external) that triggers powerful cravings to seek addictions (social media, food, etc.) For example whenever you're bored you check phone (internal cue) and whenever you're alone you check phone (external cue).
+- It weakens the connection between part of brain that's logical with part of brain that deals with control. What this looks like is even if you know that you shouldn't do something you won't be able to control yourself with logical understanding.
+- It weakens the part of brain that deals with stress. What this looks like is just a small amount of stress is enough for you to crave your addictions.
+
+How to deal with the brain changes?
+
+To reverse this changes is not easy because this changes happened slowly overtime (over the years) and you should expect the same while healing.
+
 So the best way I find myself to get on track is to decide that you will not do those dopamine seeking behaviour that led you down the path of losing interest in the right things by highjacking your reward pathways and getting back to normal baseline where you feel good and derive pleasure just by doing normal things.
 
 What this look like is deciding that you will either work or do nothing. You are allowed to get bored, sleep, go into the nature and be with your loved ones. You are not allowed to play games, listen to music, visit social media, eat some junk food, etc. everything that induce dopamine to abnormal levels.
 
-What tends to happen is that once you start doing that you will be so bored that you will think it's just better to do the work (how do you think I am able to write this article?) So start getting bored you will naturally want to work because it's better than doing nothing and let your brain do it's magic and make you feel good as you work and achieve your dream life. 
-
-Bye ♡
+What tends to happen is that once you start doing that you will be so bored that you will think it's just better to do the work (how do you think I am able to write this article?) So start getting bored you will naturally want to work because it's better than doing nothing and let your brain do it's magic and make you feel good as you work and achieve your dream life. Bye ♡
