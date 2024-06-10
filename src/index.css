@@ -21,7 +21,7 @@
 
 ::-webkit-scrollbar-thumb:vertical {
   height: 30px;
-  background-color: #008080;
+  background: linear-gradient(135deg, #008080 95%, #f8f8ff 95%);
 }
 
 * {
